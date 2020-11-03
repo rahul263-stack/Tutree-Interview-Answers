@@ -1,0 +1,26 @@
+1 -  Dimensionality reduction is simply, the process of reducing the dimension of your feature set. Your feature set could be a dataset with a hundred columns (i.e features) or it could be an array of points that make up a large sphere in the three-dimensional space. Dimensionality reduction is bringing the number of columns down to say, twenty or converting the sphere to a circle in the two-dimensional space.
+
+2 -  Dealing With Duplicate value in a data set For a variable in python using pandas
+Checking for duplicates
+First of all, you may want to check if you have duplicate records. If you don’t, you may not need the rest of this post at all. This checks if the whole row appears elsewhere with the same values in each column.
+df.duplicated()
+df.duplicated(‘col1’)
+This checks if there are duplicate values in a particular column of your DataFrame.
+Getting rid of duplicates
+Getting rid of duplicate records is easy. Just use:
+df.drop_duplicates()
+Dropping duplicates from a particular column
+Sometimes, you may want to drop duplicates just from one column.
+df.drop_duplicates([‘col1’])
+
+3 - df = pd.read_csv('file.csv')
+This dataset has many duplicate values. You need to identify them and also remove them.
+df.duplicated()
+df.duplicated(‘col1’)
+This checks if there are duplicate values in a particular column of your DataFrame.
+Getting rid of duplicates
+Getting rid of duplicate records is easy. Just use:
+df.drop_duplicates()
+Dropping duplicates from a particular column
+Sometimes, you may want to drop duplicates just from one column.
+df.drop_duplicates([‘col1’])
